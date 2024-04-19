@@ -1,6 +1,6 @@
 name: Databricks_AutomationJobs_Project
 description: ''
-version: 0.0.1
+version: '1.0'
 author: null
 language: sql
 buildSystem: ''
