@@ -1,0 +1,144 @@
+{
+  "id" : "test_snapshot_final_Automation_Databricks_jobs_model",
+  "metainfo" : {
+    "label" : "test_snapshot_final_Automation_Databricks_jobs_model",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "strategy" : "'check'",
+        "check_cols" : [ "\"id\"", "\"name\"" ],
+        "updated_at" : "\"updated_at\"",
+        "target_schema" : "\"QA_SCHEMA\"",
+        "unique_key" : "\"id\"",
+        "type" : "SnapshotConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "test_snapshot_final_Automation_Databricks_jobs_model##kvPIkP87" : {
+      "id" : "test_snapshot_final_Automation_Databricks_jobs_model##kvPIkP87",
+      "component" : "TargetSnapshot",
+      "metadata" : {
+        "label" : "test_snapshot_final_Automation_Databricks_jobs_model",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "query" : "SELECT * \n\nFROM test_Automation_Databricks_jobs_model\n",
+        "customQuery" : false,
+        "customQueryDisabled" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ldMJUn5V",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "updated_at",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "test_Automation_Databricks_jobs_model"
+        } ],
+        "outputs" : [ {
+          "id" : "zgD0tCR7",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "updated_at",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "w5u4nTj_IJ6PPgl9fk-Rr" : {
+      "id" : "w5u4nTj_IJ6PPgl9fk-Rr",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "test_Automation_Databricks_jobs_model",
+        "slug" : "test_Automation_Databricks_jobs_model",
+        "x" : -391.6000061035156,
+        "y" : -154.39999389648438,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "test_Automation_Databricks_jobs_model",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "rOeF_Q9M6PaYiU9_M-xpq",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "updated_at",
+              "dataType" : {
+                "type" : "Date"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "nPdXKNSRx-T1oVt3FtcZH",
+    "source" : "w5u4nTj_IJ6PPgl9fk-Rr",
+    "sourcePort" : "rOeF_Q9M6PaYiU9_M-xpq",
+    "target" : "test_snapshot_final_Automation_Databricks_jobs_model##kvPIkP87",
+    "targetPort" : "ldMJUn5V"
+  } ],
+  "component" : "Snapshot"
+}
