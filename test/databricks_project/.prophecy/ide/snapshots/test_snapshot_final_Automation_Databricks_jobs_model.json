@@ -41,19 +41,131 @@
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "name",
+              "name" : "uid",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "updated_at",
+              "name" : "pipeline_uri",
               "dataType" : {
-                "type" : "Date"
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "task_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "time_taken",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "rows_read",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "rows_written",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "run_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "input_datasets",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "output_datasets",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "workflow_code",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "expired",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_config",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_config",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "expected_interims",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "actual_interims",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "logs",
+              "dataType" : {
+                "type" : "String"
               }
             } ]
           },
@@ -64,19 +176,131 @@
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "name",
+              "name" : "uid",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "updated_at",
+              "name" : "pipeline_uri",
               "dataType" : {
-                "type" : "Date"
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "task_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "time_taken",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "rows_read",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "rows_written",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "run_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "input_datasets",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "output_datasets",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "workflow_code",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "expired",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_config",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_config",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "expected_interims",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "actual_interims",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "logs",
+              "dataType" : {
+                "type" : "String"
               }
             } ]
           },
@@ -110,19 +334,131 @@
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "name",
+              "name" : "uid",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "updated_at",
+              "name" : "pipeline_uri",
               "dataType" : {
-                "type" : "Date"
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "task_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "time_taken",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "rows_read",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "rows_written",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "run_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "input_datasets",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "output_datasets",
+              "dataType" : {
+                "type" : "Array",
+                "dataType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "workflow_code",
+              "dataType" : {
+                "type" : "Map",
+                "keyType" : {
+                  "type" : "String"
+                },
+                "valueType" : {
+                  "type" : "String"
+                }
+              }
+            }, {
+              "name" : "expired",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_config",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "user_config",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "expected_interims",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "actual_interims",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "logs",
+              "dataType" : {
+                "type" : "String"
               }
             } ]
           },

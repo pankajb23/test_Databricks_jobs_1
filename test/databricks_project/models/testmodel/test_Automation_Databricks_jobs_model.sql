@@ -5,14 +5,14 @@
   })
 }}
 
-WITH qa_test_seed_job_Databricks AS (
+WITH pipeline_runs AS (
 
   SELECT * 
   
-  FROM {{ ref('qa_test_seed_job_Databricks')}}
+  FROM {{ source('hive_metastore.prophecy_rajat_dev_cloud', 'pipeline_runs') }}
 
 )
 
 SELECT *
 
-FROM qa_test_seed_job_Databricks
+FROM pipeline_runs

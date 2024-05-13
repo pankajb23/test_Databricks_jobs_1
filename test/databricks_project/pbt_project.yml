@@ -12,7 +12,7 @@ jobs:
   jobs/Airflow-DB-MWAA-Automation:
     name: Airflow-DB-MWAA-Automation
     description: SQL BigQuery test job
-    fabricUID: 25
+    fabricUID: 45
     scheduler:
       MWAA: {}
     cloudProvider: null
@@ -27,9 +27,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: false
     createdAt: '2024-04-18 07:04:59'
     author: abhisheks+e2etests@prophecy.io
 gemContainer:
@@ -51,15 +51,83 @@ sqlModels:
     schema:
       providerType: Databricks
       fields:
-      - name: id
-        dataType:
-          type: Integer
-      - name: name
+      - name: uid
         dataType:
           type: String
-      - name: updated_at
+      - name: pipeline_uri
         dataType:
-          type: Date
+          type: String
+      - name: job_uri
+        dataType:
+          type: String
+      - name: job_run_uid
+        dataType:
+          type: String
+      - name: task_run_uid
+        dataType:
+          type: String
+      - name: status
+        dataType:
+          type: String
+      - name: fabric_uid
+        dataType:
+          type: String
+      - name: time_taken
+        dataType:
+          type: Bigint
+      - name: rows_read
+        dataType:
+          type: Bigint
+      - name: rows_written
+        dataType:
+          type: Bigint
+      - name: created_at
+        dataType:
+          type: Timestamp
+      - name: created_by
+        dataType:
+          type: String
+      - name: run_type
+        dataType:
+          type: String
+      - name: input_datasets
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: output_datasets
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: workflow_code
+        dataType:
+          type: Map
+          keyType:
+            type: String
+          valueType:
+            type: String
+      - name: expired
+        dataType:
+          type: Boolean
+      - name: branch
+        dataType:
+          type: String
+      - name: pipeline_config
+        dataType:
+          type: String
+      - name: user_config
+        dataType:
+          type: String
+      - name: expected_interims
+        dataType:
+          type: Integer
+      - name: actual_interims
+        dataType:
+          type: Integer
+      - name: logs
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -78,15 +146,83 @@ sqlSnapshots:
     schema:
       providerType: Databricks
       fields:
-      - name: id
-        dataType:
-          type: Integer
-      - name: name
+      - name: uid
         dataType:
           type: String
-      - name: updated_at
+      - name: pipeline_uri
         dataType:
-          type: Date
+          type: String
+      - name: job_uri
+        dataType:
+          type: String
+      - name: job_run_uid
+        dataType:
+          type: String
+      - name: task_run_uid
+        dataType:
+          type: String
+      - name: status
+        dataType:
+          type: String
+      - name: fabric_uid
+        dataType:
+          type: String
+      - name: time_taken
+        dataType:
+          type: Bigint
+      - name: rows_read
+        dataType:
+          type: Bigint
+      - name: rows_written
+        dataType:
+          type: Bigint
+      - name: created_at
+        dataType:
+          type: Timestamp
+      - name: created_by
+        dataType:
+          type: String
+      - name: run_type
+        dataType:
+          type: String
+      - name: input_datasets
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: output_datasets
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: workflow_code
+        dataType:
+          type: Map
+          keyType:
+            type: String
+          valueType:
+            type: String
+      - name: expired
+        dataType:
+          type: Boolean
+      - name: branch
+        dataType:
+          type: String
+      - name: pipeline_config
+        dataType:
+          type: String
+      - name: user_config
+        dataType:
+          type: String
+      - name: expected_interims
+        dataType:
+          type: Integer
+      - name: actual_interims
+        dataType:
+          type: Integer
+      - name: logs
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -99,6 +235,7 @@ sqlSnapshots:
       sources: []
       snapshots: []
     createdAt: '2024-04-18 07:02:05'
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds:
   .prophecy/metadata/sqlseeds/qa_test_seed_job_Databricks:
@@ -120,7 +257,99 @@ sqlSeeds:
     files:
     - seeds/qa_test_seed_job_Databricks.csv
     createdAt: '2024-04-18 06:59:44'
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_prophecy_rajat_dev_cloud:
+    name: hive_metastore.prophecy_rajat_dev_cloud
+    description: null
+    author: pankaj@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-05-13 06:38:37'
+    tables:
+    - name: pipeline_runs
+      schema:
+        providerType: databricks
+        fields:
+        - name: uid
+          dataType:
+            type: String
+        - name: pipeline_uri
+          dataType:
+            type: String
+        - name: job_uri
+          dataType:
+            type: String
+        - name: job_run_uid
+          dataType:
+            type: String
+        - name: task_run_uid
+          dataType:
+            type: String
+        - name: status
+          dataType:
+            type: String
+        - name: fabric_uid
+          dataType:
+            type: String
+        - name: time_taken
+          dataType:
+            type: Bigint
+        - name: rows_read
+          dataType:
+            type: Bigint
+        - name: rows_written
+          dataType:
+            type: Bigint
+        - name: created_at
+          dataType:
+            type: Timestamp
+        - name: created_by
+          dataType:
+            type: String
+        - name: run_type
+          dataType:
+            type: String
+        - name: input_datasets
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: output_datasets
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: workflow_code
+          dataType:
+            type: Map
+            keyType:
+              type: String
+            valueType:
+              type: String
+        - name: expired
+          dataType:
+            type: Boolean
+        - name: branch
+          dataType:
+            type: String
+        - name: pipeline_config
+          dataType:
+            type: String
+        - name: user_config
+          dataType:
+            type: String
+        - name: expected_interims
+          dataType:
+            type: Integer
+        - name: actual_interims
+          dataType:
+            type: Integer
+        - name: logs
+          dataType:
+            type: String
+      description: null
+      author: pankaj@prophecy.io
+      createdAt: '2024-05-13 06:38:37'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
