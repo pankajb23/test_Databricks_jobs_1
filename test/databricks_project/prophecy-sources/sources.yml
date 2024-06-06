@@ -86,3 +86,65 @@ sources:
     - name: "logs"
       dataType:
         type: "String"
+  - name: "component_runs"
+    columns:
+    - name: "uid"
+      dataType:
+        type: "String"
+    - name: "component_uri"
+      dataType:
+        type: "String"
+    - name: "pipeline_uri"
+      dataType:
+        type: "String"
+    - name: "pipeline_run_uid"
+      dataType:
+        type: "String"
+    - name: "fabric_uid"
+      dataType:
+        type: "String"
+    - name: "component_name"
+      dataType:
+        type: "String"
+    - name: "interim_component_name"
+      dataType:
+        type: "String"
+    - name: "component_type"
+      dataType:
+        type: "String"
+    - name: "interim_subgraph_name"
+      dataType:
+        type: "String"
+    - name: "interim_process_id"
+      dataType:
+        type: "String"
+    - name: "interim_out_port"
+      dataType:
+        type: "String"
+    - name: "created_at"
+      dataType:
+        type: "Timestamp"
+    - name: "created_by"
+      dataType:
+        type: "String"
+    - name: "records"
+      dataType:
+        type: "Bigint"
+    - name: "bytes"
+      dataType:
+        type: "Bigint"
+    - name: "partitions"
+      dataType:
+        type: "Bigint"
+    - name: "expired"
+      dataType:
+        type: "Boolean"
+    - name: "run_type"
+      dataType:
+        type: "String"
+    - name: "job_uri"
+      dataType:
+        type: "String"
+    - name: "branch"
+      dataType:
+        type: "String"

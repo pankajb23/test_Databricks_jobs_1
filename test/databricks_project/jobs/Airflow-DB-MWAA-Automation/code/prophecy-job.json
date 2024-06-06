@@ -4,9 +4,9 @@
     "fabricId" : "45",
     "jobId" : "jobs/Airflow-DB-MWAA-Automation",
     "name" : "Airflow-DB-MWAA-Automation",
-    "dagName" : "staging_abhisheks_e2etests_Databricks_AutomationJobs_Project_Airflow_DB_MWAA_Automation",
+    "dagName" : "executionk3s_pankaj_Databricks_AutomationJobs_Project_Airflow_DB_MWAA_Automation",
     "schedule" : "0 0 17 2 *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -29,13 +29,14 @@
       "name" : "airflow_open_source",
       "artifactsLocation" : "/mnt/airflow/artifacts"
     }, {
-      "id" : "44",
-      "name" : "pma_a",
-      "trialStartDate" : 1714719302107
-    }, {
       "id" : "45",
       "name" : "airflow_253"
+    }, {
+      "id" : "47",
+      "name" : "pma_21",
+      "trialStartDate" : 1715236378660
     } ],
+    "endDate" : "2024-06-29",
     "catchup" : true,
     "tags" : [ ],
     "scheduleTimeZone" : "UTC",
@@ -55,33 +56,34 @@
     }
   },
   "processes" : {
-    "klZj-VRVQenWlE5aEle_u$$VIYH3MK2te-KqFC6TPjaz" : {
-      "id" : "klZj-VRVQenWlE5aEle_u$$VIYH3MK2te-KqFC6TPjaz",
+    "ACQSZuvbRTDvYVGUii_Bu$$aBPsFFhTB2DE6EtHbFjI5" : {
+      "id" : "ACQSZuvbRTDvYVGUii_Bu$$aBPsFFhTB2DE6EtHbFjI5",
       "component" : "Model",
       "metadata" : {
-        "label" : "Model_1",
-        "slug" : "Model_1",
-        "x" : -1740,
-        "y" : -800
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : -10000,
+        "y" : -140
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "IYGUWQBVco8Mo0kfL0tJK$$UIwpFUUfY01pWd86YSSYw",
+          "id" : "MMf114xZzGIAHxm_6sibW$$EdBdbkqul0xMOb0SyWO6k",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "B9VYb7tnjBtLtv4xYK90c$$dSCJ3hL9lliNfFej_fIvc",
+          "id" : "dqgBvpIClUFZ68p5NHo9c$$KcLbcoYUivW0lgozSbxm3",
           "slug" : ""
         } ]
       },
       "settings" : { },
       "properties" : {
+        "entityId" : "108/.prophecy/metadata/sqlsnapshots/newSnap",
         "cacheSelectedOnly" : null,
         "gitSubPath" : null,
         "runModelWithParents" : false,
         "defer" : null,
         "noDefer" : null,
-        "runSeed" : false,
+        "runSeed" : true,
         "gitEntity" : "branch",
         "noPartialParse" : null,
         "model" : null,
@@ -93,13 +95,15 @@
         "gitSshUrl" : null,
         "indirectSelection" : null,
         "partialParse" : null,
-        "runRun" : true,
+        "runRun" : false,
         "vars" : null,
-        "runSnapshots" : false,
+        "isAdhocRunFromSameProject" : null,
+        "customVersion" : false,
+        "runSnapshots" : true,
         "noPrint" : null,
         "quiet" : null,
         "projectId" : "108",
-        "runMode" : "project",
+        "runMode" : "model",
         "runOnlyModel" : false,
         "favorState" : null,
         "failFast" : null,
@@ -109,39 +113,56 @@
         "select" : null,
         "recordTimingInfo" : null,
         "fullRefresh" : null,
+        "entityName" : "newSnap",
         "noCacheSelectedOnly" : null,
         "noFavorState" : null,
         "snapshot" : null,
         "isProphecyManaged" : false,
         "profile" : null,
         "noVersionCheck" : null,
-        "noWriteJson" : false,
+        "noWriteJson" : null,
         "printerWidth" : null,
-        "sqlFabricId" : "36",
-        "gitEntityValue" : "main2",
+        "sqlFabricId" : "33",
+        "gitEntityValue" : "main",
         "logFormat" : null,
         "runModelWithChildren" : false,
         "dbtProfileSecret" : null,
         "target" : null,
         "exclude" : null,
-        "runDeps" : false,
-        "configurations" : [ {
-          "label" : "test_Automation_Databricks_jobs_model",
-          "value" : "test_Automation_Databricks_jobs_model",
-          "id" : "108/.prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model",
-          "name" : "test_Automation_Databricks_jobs_model"
-        } ],
+        "runDeps" : null,
         "loadingSnapshots" : false,
+        "gitEntityValueBranch" : "main",
         "noAnonymousUsageStats" : null,
         "selector" : null,
         "targetPath" : null,
         "threads" : null,
         "warnError" : null,
-        "currentProjectModels" : null,
+        "currentProjectModels" : [ {
+          "label" : "model3",
+          "value" : "model3",
+          "id" : "108/.prophecy/metadata/sqlmodels/model3",
+          "name" : "model3"
+        }, {
+          "label" : "model02",
+          "value" : "model02",
+          "id" : "108/.prophecy/metadata/sqlmodels/model02",
+          "name" : "model02"
+        }, {
+          "label" : "newTemporaryModel",
+          "value" : "newTemporaryModel",
+          "id" : "108/.prophecy/metadata/sqlmodels/newTemporaryModel",
+          "name" : "newTemporaryModel"
+        }, {
+          "label" : "test_Automation_Databricks_jobs_model",
+          "value" : "test_Automation_Databricks_jobs_model",
+          "id" : "108/.prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model",
+          "name" : "test_Automation_Databricks_jobs_model"
+        } ],
         "profilesDir" : null,
         "taskId" : null,
         "logPath" : null,
-        "storeFailures" : null
+        "storeFailures" : null,
+        "entityKind" : "snapshot"
       },
       "connections" : [ ],
       "processes" : { }

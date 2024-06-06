@@ -1,0 +1,1317 @@
+{
+  "id" : "model3",
+  "metainfo" : {
+    "label" : "model3",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ {
+        "source" : {
+          "table" : {
+            "name" : "interims4",
+            "sourceName" : "hive_metastore.prophecy_rajat_dev_cloud",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "interims4",
+        "canJoinWith" : [ {
+          "processLabel" : "component_runs",
+          "processId" : "2Wy-K7-2wRjm3aaG5ojqt",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "uid", "fabric_uid", "created_at", "created_by" ],
+            "conditions" : [ {
+              "alias" : "interims4",
+              "expression" : {
+                "expression" : "component_runs.uid = interims4.uid AND component_runs.fabric_uid = interims4.fabric_uid AND component_runs.created_at = interims4.created_at AND component_runs.created_by = interims4.created_by"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "interims4.interim"
+              },
+              "alias" : "interim"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_uri"
+              },
+              "alias" : "pipeline_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.uid"
+              },
+              "alias" : "uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_run_uid"
+              },
+              "alias" : "pipeline_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_uri"
+              },
+              "alias" : "component_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.partitions"
+              },
+              "alias" : "partitions"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_subgraph_name"
+              },
+              "alias" : "interim_subgraph_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_by"
+              },
+              "alias" : "created_by"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_process_id"
+              },
+              "alias" : "interim_process_id"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.expired"
+              },
+              "alias" : "expired"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.records"
+              },
+              "alias" : "records"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_component_name"
+              },
+              "alias" : "interim_component_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.branch"
+              },
+              "alias" : "branch"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.run_type"
+              },
+              "alias" : "run_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.bytes"
+              },
+              "alias" : "bytes"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.job_uri"
+              },
+              "alias" : "job_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_type"
+              },
+              "alias" : "component_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_out_port"
+              },
+              "alias" : "interim_out_port"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.fabric_uid"
+              },
+              "alias" : "fabric_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_name"
+              },
+              "alias" : "component_name"
+            } ],
+            "headAlias" : "interims4"
+          },
+          "joinColumns" : [ "uid", "fabric_uid", "created_at", "created_by" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "interims9",
+            "sourceName" : "hive_metastore.prophecy_rajat_dev_cloud",
+            "sourceType" : "ExternalSource"
+          }
+        },
+        "sourceComponentKind" : "ExternalSource",
+        "sourceLabel" : "interims9",
+        "canJoinWith" : [ {
+          "processLabel" : "component_runs",
+          "processId" : "2Wy-K7-2wRjm3aaG5ojqt",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "uid", "fabric_uid", "created_at", "created_by" ],
+            "conditions" : [ {
+              "alias" : "interims9",
+              "expression" : {
+                "expression" : "component_runs.uid = interims9.uid AND component_runs.fabric_uid = interims9.fabric_uid AND component_runs.created_at = interims9.created_at AND component_runs.created_by = interims9.created_by"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "interims9.interim"
+              },
+              "alias" : "interim"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_uri"
+              },
+              "alias" : "pipeline_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.uid"
+              },
+              "alias" : "uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_run_uid"
+              },
+              "alias" : "pipeline_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_uri"
+              },
+              "alias" : "component_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.partitions"
+              },
+              "alias" : "partitions"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_subgraph_name"
+              },
+              "alias" : "interim_subgraph_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_by"
+              },
+              "alias" : "created_by"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_process_id"
+              },
+              "alias" : "interim_process_id"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.expired"
+              },
+              "alias" : "expired"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.records"
+              },
+              "alias" : "records"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_component_name"
+              },
+              "alias" : "interim_component_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.branch"
+              },
+              "alias" : "branch"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.run_type"
+              },
+              "alias" : "run_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.bytes"
+              },
+              "alias" : "bytes"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.job_uri"
+              },
+              "alias" : "job_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_type"
+              },
+              "alias" : "component_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_out_port"
+              },
+              "alias" : "interim_out_port"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.fabric_uid"
+              },
+              "alias" : "fabric_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_name"
+              },
+              "alias" : "component_name"
+            } ],
+            "headAlias" : "interims9"
+          },
+          "joinColumns" : [ "uid", "fabric_uid", "created_at", "created_by" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "pipeline_runs",
+            "sourceName" : "hive_metastore.prophecy_rajat_dev_cloud",
+            "sourceType" : "Source"
+          }
+        },
+        "sourceComponentKind" : "Source",
+        "sourceLabel" : "pipeline_runs",
+        "canJoinWith" : [ {
+          "processLabel" : "component_runs",
+          "processId" : "2Wy-K7-2wRjm3aaG5ojqt",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "uid", "pipeline_uri", "fabric_uid", "created_at", "created_by", "expired", "run_type", "job_uri", "branch" ],
+            "conditions" : [ {
+              "alias" : "pipeline_runs",
+              "expression" : {
+                "expression" : "component_runs.uid = pipeline_runs.uid AND component_runs.pipeline_uri = pipeline_runs.pipeline_uri AND component_runs.fabric_uid = pipeline_runs.fabric_uid AND component_runs.created_at = pipeline_runs.created_at AND component_runs.created_by = pipeline_runs.created_by AND component_runs.expired = pipeline_runs.expired AND component_runs.run_type = pipeline_runs.run_type AND component_runs.job_uri = pipeline_runs.job_uri AND component_runs.branch = pipeline_runs.branch"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "pipeline_runs.job_run_uid"
+              },
+              "alias" : "job_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.task_run_uid"
+              },
+              "alias" : "task_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.status"
+              },
+              "alias" : "status"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.time_taken"
+              },
+              "alias" : "time_taken"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.rows_read"
+              },
+              "alias" : "rows_read"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.rows_written"
+              },
+              "alias" : "rows_written"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.input_datasets"
+              },
+              "alias" : "input_datasets"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.output_datasets"
+              },
+              "alias" : "output_datasets"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.workflow_code"
+              },
+              "alias" : "workflow_code"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.pipeline_config"
+              },
+              "alias" : "pipeline_config"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.user_config"
+              },
+              "alias" : "user_config"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.expected_interims"
+              },
+              "alias" : "expected_interims"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.actual_interims"
+              },
+              "alias" : "actual_interims"
+            }, {
+              "expression" : {
+                "expression" : "pipeline_runs.logs"
+              },
+              "alias" : "logs"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_uri"
+              },
+              "alias" : "pipeline_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.uid"
+              },
+              "alias" : "uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_run_uid"
+              },
+              "alias" : "pipeline_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_uri"
+              },
+              "alias" : "component_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.partitions"
+              },
+              "alias" : "partitions"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_subgraph_name"
+              },
+              "alias" : "interim_subgraph_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_by"
+              },
+              "alias" : "created_by"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_process_id"
+              },
+              "alias" : "interim_process_id"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.expired"
+              },
+              "alias" : "expired"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.records"
+              },
+              "alias" : "records"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_component_name"
+              },
+              "alias" : "interim_component_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.branch"
+              },
+              "alias" : "branch"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.run_type"
+              },
+              "alias" : "run_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.bytes"
+              },
+              "alias" : "bytes"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.job_uri"
+              },
+              "alias" : "job_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_type"
+              },
+              "alias" : "component_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_out_port"
+              },
+              "alias" : "interim_out_port"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.fabric_uid"
+              },
+              "alias" : "fabric_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_name"
+              },
+              "alias" : "component_name"
+            } ],
+            "headAlias" : "pipeline_runs"
+          },
+          "joinColumns" : [ "uid", "pipeline_uri", "fabric_uid", "created_at", "created_by", "expired", "run_type", "job_uri", "branch" ],
+          "isRecommended" : true
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "model02",
+            "sourceType" : "Model"
+          }
+        },
+        "sourceComponentKind" : "Model",
+        "sourceLabel" : "model02",
+        "canJoinWith" : [ {
+          "processLabel" : "component_runs",
+          "processId" : "2Wy-K7-2wRjm3aaG5ojqt",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "uid", "component_uri", "pipeline_uri", "pipeline_run_uid", "fabric_uid", "component_name", "interim_component_name", "component_type", "interim_subgraph_name", "interim_process_id", "interim_out_port", "created_at", "created_by", "records", "bytes", "partitions", "expired", "run_type", "job_uri", "branch" ],
+            "conditions" : [ {
+              "alias" : "model02",
+              "expression" : {
+                "expression" : "component_runs.uid = model02.uid AND component_runs.component_uri = model02.component_uri AND component_runs.pipeline_uri = model02.pipeline_uri AND component_runs.pipeline_run_uid = model02.pipeline_run_uid AND component_runs.fabric_uid = model02.fabric_uid AND component_runs.component_name = model02.component_name AND component_runs.interim_component_name = model02.interim_component_name AND component_runs.component_type = model02.component_type AND component_runs.interim_subgraph_name = model02.interim_subgraph_name AND component_runs.interim_process_id = model02.interim_process_id AND component_runs.interim_out_port = model02.interim_out_port AND component_runs.created_at = model02.created_at AND component_runs.created_by = model02.created_by AND component_runs.records = model02.records AND component_runs.bytes = model02.bytes AND component_runs.partitions = model02.partitions AND component_runs.expired = model02.expired AND component_runs.run_type = model02.run_type AND component_runs.job_uri = model02.job_uri AND component_runs.branch = model02.branch"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "component_runs.pipeline_uri"
+              },
+              "alias" : "pipeline_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.uid"
+              },
+              "alias" : "uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_run_uid"
+              },
+              "alias" : "pipeline_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_uri"
+              },
+              "alias" : "component_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.partitions"
+              },
+              "alias" : "partitions"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_subgraph_name"
+              },
+              "alias" : "interim_subgraph_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_by"
+              },
+              "alias" : "created_by"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_process_id"
+              },
+              "alias" : "interim_process_id"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.expired"
+              },
+              "alias" : "expired"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.records"
+              },
+              "alias" : "records"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_component_name"
+              },
+              "alias" : "interim_component_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.branch"
+              },
+              "alias" : "branch"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.run_type"
+              },
+              "alias" : "run_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.bytes"
+              },
+              "alias" : "bytes"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.job_uri"
+              },
+              "alias" : "job_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_type"
+              },
+              "alias" : "component_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_out_port"
+              },
+              "alias" : "interim_out_port"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.fabric_uid"
+              },
+              "alias" : "fabric_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_name"
+              },
+              "alias" : "component_name"
+            } ],
+            "headAlias" : "model02"
+          },
+          "joinColumns" : [ "uid", "component_uri", "pipeline_uri", "pipeline_run_uid", "fabric_uid", "component_name", "interim_component_name", "component_type", "interim_subgraph_name", "interim_process_id", "interim_out_port", "created_at", "created_by", "records", "bytes", "partitions", "expired", "run_type", "job_uri", "branch" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "newTemporaryModel",
+            "sourceType" : "Model"
+          }
+        },
+        "sourceComponentKind" : "Model",
+        "sourceLabel" : "newTemporaryModel",
+        "canJoinWith" : [ {
+          "processLabel" : "component_runs",
+          "processId" : "2Wy-K7-2wRjm3aaG5ojqt",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "uid", "component_uri", "pipeline_uri", "pipeline_run_uid", "fabric_uid", "component_name", "interim_component_name", "component_type", "interim_subgraph_name", "interim_process_id", "interim_out_port", "created_at", "created_by", "records", "bytes", "partitions", "expired", "run_type", "job_uri", "branch" ],
+            "conditions" : [ {
+              "alias" : "newTemporaryModel",
+              "expression" : {
+                "expression" : "component_runs.uid = newTemporaryModel.uid AND component_runs.component_uri = newTemporaryModel.component_uri AND component_runs.pipeline_uri = newTemporaryModel.pipeline_uri AND component_runs.pipeline_run_uid = newTemporaryModel.pipeline_run_uid AND component_runs.fabric_uid = newTemporaryModel.fabric_uid AND component_runs.component_name = newTemporaryModel.component_name AND component_runs.interim_component_name = newTemporaryModel.interim_component_name AND component_runs.component_type = newTemporaryModel.component_type AND component_runs.interim_subgraph_name = newTemporaryModel.interim_subgraph_name AND component_runs.interim_process_id = newTemporaryModel.interim_process_id AND component_runs.interim_out_port = newTemporaryModel.interim_out_port AND component_runs.created_at = newTemporaryModel.created_at AND component_runs.created_by = newTemporaryModel.created_by AND component_runs.records = newTemporaryModel.records AND component_runs.bytes = newTemporaryModel.bytes AND component_runs.partitions = newTemporaryModel.partitions AND component_runs.expired = newTemporaryModel.expired AND component_runs.run_type = newTemporaryModel.run_type AND component_runs.job_uri = newTemporaryModel.job_uri AND component_runs.branch = newTemporaryModel.branch"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "component_runs.pipeline_uri"
+              },
+              "alias" : "pipeline_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.uid"
+              },
+              "alias" : "uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_run_uid"
+              },
+              "alias" : "pipeline_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_uri"
+              },
+              "alias" : "component_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.partitions"
+              },
+              "alias" : "partitions"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_subgraph_name"
+              },
+              "alias" : "interim_subgraph_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_by"
+              },
+              "alias" : "created_by"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_process_id"
+              },
+              "alias" : "interim_process_id"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.expired"
+              },
+              "alias" : "expired"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.records"
+              },
+              "alias" : "records"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_component_name"
+              },
+              "alias" : "interim_component_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.branch"
+              },
+              "alias" : "branch"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.run_type"
+              },
+              "alias" : "run_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.bytes"
+              },
+              "alias" : "bytes"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.job_uri"
+              },
+              "alias" : "job_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_type"
+              },
+              "alias" : "component_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_out_port"
+              },
+              "alias" : "interim_out_port"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.fabric_uid"
+              },
+              "alias" : "fabric_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_name"
+              },
+              "alias" : "component_name"
+            } ],
+            "headAlias" : "newTemporaryModel"
+          },
+          "joinColumns" : [ "uid", "component_uri", "pipeline_uri", "pipeline_run_uid", "fabric_uid", "component_name", "interim_component_name", "component_type", "interim_subgraph_name", "interim_process_id", "interim_out_port", "created_at", "created_by", "records", "bytes", "partitions", "expired", "run_type", "job_uri", "branch" ],
+          "isRecommended" : false
+        } ]
+      }, {
+        "source" : {
+          "table" : {
+            "name" : "test_Automation_Databricks_jobs_model",
+            "sourceType" : "Model"
+          }
+        },
+        "sourceComponentKind" : "Model",
+        "sourceLabel" : "test_Automation_Databricks_jobs_model",
+        "canJoinWith" : [ {
+          "processLabel" : "component_runs",
+          "processId" : "2Wy-K7-2wRjm3aaG5ojqt",
+          "properties" : {
+            "activeTab" : "conditions",
+            "columnsSelector" : [ "uid", "pipeline_uri", "fabric_uid", "created_at", "created_by", "expired", "run_type", "job_uri", "branch" ],
+            "conditions" : [ {
+              "alias" : "test_Automation_Databricks_jobs_model",
+              "expression" : {
+                "expression" : "component_runs.uid = test_Automation_Databricks_jobs_model.uid AND component_runs.pipeline_uri = test_Automation_Databricks_jobs_model.pipeline_uri AND component_runs.fabric_uid = test_Automation_Databricks_jobs_model.fabric_uid AND component_runs.created_at = test_Automation_Databricks_jobs_model.created_at AND component_runs.created_by = test_Automation_Databricks_jobs_model.created_by AND component_runs.expired = test_Automation_Databricks_jobs_model.expired AND component_runs.run_type = test_Automation_Databricks_jobs_model.run_type AND component_runs.job_uri = test_Automation_Databricks_jobs_model.job_uri AND component_runs.branch = test_Automation_Databricks_jobs_model.branch"
+              },
+              "joinType" : "inner"
+            } ],
+            "expressions" : [ {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.job_run_uid"
+              },
+              "alias" : "job_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.task_run_uid"
+              },
+              "alias" : "task_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.status"
+              },
+              "alias" : "status"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.time_taken"
+              },
+              "alias" : "time_taken"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.rows_read"
+              },
+              "alias" : "rows_read"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.rows_written"
+              },
+              "alias" : "rows_written"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.input_datasets"
+              },
+              "alias" : "input_datasets"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.output_datasets"
+              },
+              "alias" : "output_datasets"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.workflow_code"
+              },
+              "alias" : "workflow_code"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.pipeline_config"
+              },
+              "alias" : "pipeline_config"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.user_config"
+              },
+              "alias" : "user_config"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.expected_interims"
+              },
+              "alias" : "expected_interims"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.actual_interims"
+              },
+              "alias" : "actual_interims"
+            }, {
+              "expression" : {
+                "expression" : "test_Automation_Databricks_jobs_model.logs"
+              },
+              "alias" : "logs"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_uri"
+              },
+              "alias" : "pipeline_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.uid"
+              },
+              "alias" : "uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.pipeline_run_uid"
+              },
+              "alias" : "pipeline_run_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_uri"
+              },
+              "alias" : "component_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.partitions"
+              },
+              "alias" : "partitions"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_subgraph_name"
+              },
+              "alias" : "interim_subgraph_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_by"
+              },
+              "alias" : "created_by"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_process_id"
+              },
+              "alias" : "interim_process_id"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.expired"
+              },
+              "alias" : "expired"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.records"
+              },
+              "alias" : "records"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_component_name"
+              },
+              "alias" : "interim_component_name"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.branch"
+              },
+              "alias" : "branch"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.run_type"
+              },
+              "alias" : "run_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.bytes"
+              },
+              "alias" : "bytes"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.created_at"
+              },
+              "alias" : "created_at"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.job_uri"
+              },
+              "alias" : "job_uri"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_type"
+              },
+              "alias" : "component_type"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.interim_out_port"
+              },
+              "alias" : "interim_out_port"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.fabric_uid"
+              },
+              "alias" : "fabric_uid"
+            }, {
+              "expression" : {
+                "expression" : "component_runs.component_name"
+              },
+              "alias" : "component_name"
+            } ],
+            "headAlias" : "test_Automation_Databricks_jobs_model"
+          },
+          "joinColumns" : [ "uid", "pipeline_uri", "fabric_uid", "created_at", "created_by", "expired", "run_type", "job_uri", "branch" ],
+          "isRecommended" : false
+        } ]
+      } ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "model3##vdrtra1d" : {
+      "id" : "model3##vdrtra1d",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "model3",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT * \n\nFROM component_runs\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "VB3lWsQE",
+          "schema" : {
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_component_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_subgraph_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_process_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_out_port",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "records",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "bytes",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "partitions",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "expired",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "run_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "component_runs"
+        } ],
+        "outputs" : [ {
+          "id" : "AxBMyrXg",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_component_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_subgraph_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_process_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_out_port",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "records",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "bytes",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "partitions",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "expired",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "run_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "2Wy-K7-2wRjm3aaG5ojqt" : {
+      "id" : "2Wy-K7-2wRjm3aaG5ojqt",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "component_runs",
+        "slug" : "component_runs",
+        "x" : -629.5333251953125,
+        "y" : -227.93333435058594,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "component_runs",
+          "sourceType" : "Source",
+          "sourceName" : "hive_metastore.prophecy_rajat_dev_cloud",
+          "alias" : "",
+          "additionalProperties" : null
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "piBM_s75v5yGxCGRzdvLs",
+          "schema" : {
+            "providerType" : "databricks",
+            "fields" : [ {
+              "name" : "uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "pipeline_run_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "fabric_uid",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_component_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "component_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_subgraph_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_process_id",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "interim_out_port",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "created_at",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "created_by",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "records",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "bytes",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "partitions",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "expired",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "run_type",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "job_uri",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "branch",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "57UbbN1B-Jq8vzl7EVbJj",
+    "source" : "2Wy-K7-2wRjm3aaG5ojqt",
+    "sourcePort" : "piBM_s75v5yGxCGRzdvLs",
+    "target" : "model3##vdrtra1d",
+    "targetPort" : "VB3lWsQE"
+  } ],
+  "component" : "Model"
+}

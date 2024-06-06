@@ -29,9 +29,10 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2024-04-18 07:04:59'
     author: abhisheks+e2etests@prophecy.io
+    models: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -44,8 +45,240 @@ functions:
   udafs: {}
   expressions: {}
   airflowFunctions: {}
+  businessRules: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/model02:
+    name: model02
+    schema:
+      providerType: Databricks
+      fields:
+      - name: uid
+        dataType:
+          type: String
+      - name: component_uri
+        dataType:
+          type: String
+      - name: pipeline_uri
+        dataType:
+          type: String
+      - name: pipeline_run_uid
+        dataType:
+          type: String
+      - name: fabric_uid
+        dataType:
+          type: String
+      - name: component_name
+        dataType:
+          type: String
+      - name: interim_component_name
+        dataType:
+          type: String
+      - name: component_type
+        dataType:
+          type: String
+      - name: interim_subgraph_name
+        dataType:
+          type: String
+      - name: interim_process_id
+        dataType:
+          type: String
+      - name: interim_out_port
+        dataType:
+          type: String
+      - name: created_at
+        dataType:
+          type: Timestamp
+      - name: created_by
+        dataType:
+          type: String
+      - name: records
+        dataType:
+          type: Bigint
+      - name: bytes
+        dataType:
+          type: Bigint
+      - name: partitions
+        dataType:
+          type: Bigint
+      - name: expired
+        dataType:
+          type: Boolean
+      - name: run_type
+        dataType:
+          type: String
+      - name: job_uri
+        dataType:
+          type: String
+      - name: branch
+        dataType:
+          type: String
+    description: null
+    author: pankaj@prophecy.io
+    files:
+    - models/model02.sql
+    - .prophecy/ide/models/model02.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-05-23 07:48:58'
+  .prophecy/metadata/sqlmodels/model3:
+    name: model3
+    schema:
+      providerType: Databricks
+      fields:
+      - name: uid
+        dataType:
+          type: String
+      - name: component_uri
+        dataType:
+          type: String
+      - name: pipeline_uri
+        dataType:
+          type: String
+      - name: pipeline_run_uid
+        dataType:
+          type: String
+      - name: fabric_uid
+        dataType:
+          type: String
+      - name: component_name
+        dataType:
+          type: String
+      - name: interim_component_name
+        dataType:
+          type: String
+      - name: component_type
+        dataType:
+          type: String
+      - name: interim_subgraph_name
+        dataType:
+          type: String
+      - name: interim_process_id
+        dataType:
+          type: String
+      - name: interim_out_port
+        dataType:
+          type: String
+      - name: created_at
+        dataType:
+          type: Timestamp
+      - name: created_by
+        dataType:
+          type: String
+      - name: records
+        dataType:
+          type: Bigint
+      - name: bytes
+        dataType:
+          type: Bigint
+      - name: partitions
+        dataType:
+          type: Bigint
+      - name: expired
+        dataType:
+          type: Boolean
+      - name: run_type
+        dataType:
+          type: String
+      - name: job_uri
+        dataType:
+          type: String
+      - name: branch
+        dataType:
+          type: String
+    description: null
+    author: pankaj@prophecy.io
+    files:
+    - models/model3.sql
+    - .prophecy/ide/models/model3.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-05-23 09:25:08'
+  .prophecy/metadata/sqlmodels/newTemporaryModel:
+    name: newTemporaryModel
+    schema:
+      providerType: Databricks
+      fields:
+      - name: uid
+        dataType:
+          type: String
+      - name: component_uri
+        dataType:
+          type: String
+      - name: pipeline_uri
+        dataType:
+          type: String
+      - name: pipeline_run_uid
+        dataType:
+          type: String
+      - name: fabric_uid
+        dataType:
+          type: String
+      - name: component_name
+        dataType:
+          type: String
+      - name: interim_component_name
+        dataType:
+          type: String
+      - name: component_type
+        dataType:
+          type: String
+      - name: interim_subgraph_name
+        dataType:
+          type: String
+      - name: interim_process_id
+        dataType:
+          type: String
+      - name: interim_out_port
+        dataType:
+          type: String
+      - name: created_at
+        dataType:
+          type: Timestamp
+      - name: created_by
+        dataType:
+          type: String
+      - name: records
+        dataType:
+          type: Bigint
+      - name: bytes
+        dataType:
+          type: Bigint
+      - name: partitions
+        dataType:
+          type: Bigint
+      - name: expired
+        dataType:
+          type: Boolean
+      - name: run_type
+        dataType:
+          type: String
+      - name: job_uri
+        dataType:
+          type: String
+      - name: branch
+        dataType:
+          type: String
+    description: null
+    author: pankaj@prophecy.io
+    files:
+    - models/newTemporaryModel.sql
+    - .prophecy/ide/models/newTemporaryModel.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-05-23 07:29:30'
   .prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model:
     name: test_Automation_Databricks_jobs_model
     schema:
@@ -141,6 +374,83 @@ sqlModels:
       snapshots: []
     createdAt: '2024-04-18 06:59:34'
 sqlSnapshots:
+  .prophecy/metadata/sqlsnapshots/newSnap:
+    name: newSnap
+    schema:
+      providerType: Databricks
+      fields:
+      - name: uid
+        dataType:
+          type: String
+      - name: component_uri
+        dataType:
+          type: String
+      - name: pipeline_uri
+        dataType:
+          type: String
+      - name: pipeline_run_uid
+        dataType:
+          type: String
+      - name: fabric_uid
+        dataType:
+          type: String
+      - name: component_name
+        dataType:
+          type: String
+      - name: interim_component_name
+        dataType:
+          type: String
+      - name: component_type
+        dataType:
+          type: String
+      - name: interim_subgraph_name
+        dataType:
+          type: String
+      - name: interim_process_id
+        dataType:
+          type: String
+      - name: interim_out_port
+        dataType:
+          type: String
+      - name: created_at
+        dataType:
+          type: Timestamp
+      - name: created_by
+        dataType:
+          type: String
+      - name: records
+        dataType:
+          type: Bigint
+      - name: bytes
+        dataType:
+          type: Bigint
+      - name: partitions
+        dataType:
+          type: Bigint
+      - name: expired
+        dataType:
+          type: Boolean
+      - name: run_type
+        dataType:
+          type: String
+      - name: job_uri
+        dataType:
+          type: String
+      - name: branch
+        dataType:
+          type: String
+    description: null
+    author: pankaj@prophecy.io
+    files:
+    - snapshots/newSnap.sql
+    - .prophecy/ide/snapshots/newSnap.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-05-27 11:53:15'
   .prophecy/metadata/sqlsnapshots/test_snapshot_final_Automation_Databricks_jobs_model:
     name: test_snapshot_final_Automation_Databricks_jobs_model
     schema:
@@ -350,6 +660,73 @@ sqlSources:
       description: null
       author: pankaj@prophecy.io
       createdAt: '2024-05-13 06:38:37'
+    - name: component_runs
+      schema:
+        providerType: databricks
+        fields:
+        - name: uid
+          dataType:
+            type: String
+        - name: component_uri
+          dataType:
+            type: String
+        - name: pipeline_uri
+          dataType:
+            type: String
+        - name: pipeline_run_uid
+          dataType:
+            type: String
+        - name: fabric_uid
+          dataType:
+            type: String
+        - name: component_name
+          dataType:
+            type: String
+        - name: interim_component_name
+          dataType:
+            type: String
+        - name: component_type
+          dataType:
+            type: String
+        - name: interim_subgraph_name
+          dataType:
+            type: String
+        - name: interim_process_id
+          dataType:
+            type: String
+        - name: interim_out_port
+          dataType:
+            type: String
+        - name: created_at
+          dataType:
+            type: Timestamp
+        - name: created_by
+          dataType:
+            type: String
+        - name: records
+          dataType:
+            type: Bigint
+        - name: bytes
+          dataType:
+            type: Bigint
+        - name: partitions
+          dataType:
+            type: Bigint
+        - name: expired
+          dataType:
+            type: Boolean
+        - name: run_type
+          dataType:
+            type: String
+        - name: job_uri
+          dataType:
+            type: String
+        - name: branch
+          dataType:
+            type: String
+      description: null
+      author: pankaj@prophecy.io
+      createdAt: '2024-05-23 07:29:41'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
