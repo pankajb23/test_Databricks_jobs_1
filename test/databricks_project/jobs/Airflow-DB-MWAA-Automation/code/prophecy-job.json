@@ -56,22 +56,22 @@
     }
   },
   "processes" : {
-    "ACQSZuvbRTDvYVGUii_Bu$$aBPsFFhTB2DE6EtHbFjI5" : {
-      "id" : "ACQSZuvbRTDvYVGUii_Bu$$aBPsFFhTB2DE6EtHbFjI5",
+    "O43JJ9szJPefvaAt5siqP$$4WIfW6IBZKqMo8zjOSQ63" : {
+      "id" : "O43JJ9szJPefvaAt5siqP$$4WIfW6IBZKqMo8zjOSQ63",
       "component" : "Model",
       "metadata" : {
         "label" : "Model_0",
         "slug" : "Model_0",
-        "x" : -10000,
-        "y" : -140
+        "x" : -800,
+        "y" : -560
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "MMf114xZzGIAHxm_6sibW$$EdBdbkqul0xMOb0SyWO6k",
+          "id" : "qbPQy_rDQxWF-HOZLNTpS$$wt5zHR72Sz41abI7RxPPX",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "dqgBvpIClUFZ68p5NHo9c$$KcLbcoYUivW0lgozSbxm3",
+          "id" : "fC_WcqqYIyzhjRuoodBc8$$-4x2B5eMYaMfd9vUsSS2t",
           "slug" : ""
         } ]
       },
@@ -95,11 +95,9 @@
         "gitSshUrl" : null,
         "indirectSelection" : null,
         "partialParse" : null,
-        "runRun" : false,
+        "runRun" : null,
         "vars" : null,
         "isAdhocRunFromSameProject" : null,
-        "customVersion" : false,
-        "runSnapshots" : true,
         "noPrint" : null,
         "quiet" : null,
         "projectId" : "108",
@@ -123,7 +121,7 @@
         "noWriteJson" : null,
         "printerWidth" : null,
         "sqlFabricId" : "33",
-        "gitEntityValue" : "main",
+        "gitEntityValue" : null,
         "logFormat" : null,
         "runModelWithChildren" : false,
         "dbtProfileSecret" : null,
@@ -131,33 +129,12 @@
         "exclude" : null,
         "runDeps" : null,
         "loadingSnapshots" : false,
-        "gitEntityValueBranch" : "main",
         "noAnonymousUsageStats" : null,
         "selector" : null,
         "targetPath" : null,
         "threads" : null,
         "warnError" : null,
-        "currentProjectModels" : [ {
-          "label" : "model3",
-          "value" : "model3",
-          "id" : "108/.prophecy/metadata/sqlmodels/model3",
-          "name" : "model3"
-        }, {
-          "label" : "model02",
-          "value" : "model02",
-          "id" : "108/.prophecy/metadata/sqlmodels/model02",
-          "name" : "model02"
-        }, {
-          "label" : "newTemporaryModel",
-          "value" : "newTemporaryModel",
-          "id" : "108/.prophecy/metadata/sqlmodels/newTemporaryModel",
-          "name" : "newTemporaryModel"
-        }, {
-          "label" : "test_Automation_Databricks_jobs_model",
-          "value" : "test_Automation_Databricks_jobs_model",
-          "id" : "108/.prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model",
-          "name" : "test_Automation_Databricks_jobs_model"
-        } ],
+        "currentProjectModels" : null,
         "profilesDir" : null,
         "taskId" : null,
         "logPath" : null,

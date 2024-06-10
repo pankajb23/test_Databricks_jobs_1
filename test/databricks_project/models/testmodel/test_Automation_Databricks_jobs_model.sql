@@ -5,14 +5,14 @@
   })
 }}
 
-WITH pipeline_runs AS (
+WITH newSnap AS (
 
   SELECT * 
   
-  FROM {{ source('hive_metastore.prophecy_rajat_dev_cloud', 'pipeline_runs') }}
+  FROM {{ ref('newSnap')}}
 
 )
 
 SELECT *
 
-FROM pipeline_runs
+FROM newSnap
