@@ -17,14 +17,13 @@
       },
       "userDefinedConfig" : {
         "vars" : { }
-      },
-      "mergeApproach" : "scd2"
+      }
     },
     "version" : 3
   },
   "processes" : {
-    "newTemporaryModel##aXRItjEc" : {
-      "id" : "newTemporaryModel##aXRItjEc",
+    "newTemporaryModel##YVoaWx4D" : {
+      "id" : "newTemporaryModel##YVoaWx4D",
       "component" : "Model",
       "metadata" : {
         "label" : "newTemporaryModel",
@@ -41,7 +40,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "lT8PZHMc",
+          "id" : "W3OFcbyy",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -152,9 +151,9 @@
         "autoUpdateOnRun" : false
       }
     },
-    "newSnap##zkWvdyqF" : {
-      "id" : "newSnap##zkWvdyqF",
-      "component" : "TargetModel",
+    "newSnap##F6yb16I1" : {
+      "id" : "newSnap##F6yb16I1",
+      "component" : "TargetSnapshot",
       "metadata" : {
         "label" : "newSnap",
         "x" : 220,
@@ -163,19 +162,13 @@
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "customQueryDisabled" : true,
-        "customQuery" : false,
-        "incrementalEditorDisabled" : true,
         "query" : "SELECT * \n\nFROM newTemporaryModel\n",
-        "isModel" : false,
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
+        "customQuery" : false,
+        "customQueryDisabled" : true
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "vA39hFFg",
+          "id" : "siuykvwH",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -283,7 +276,7 @@
           "slug" : "newTemporaryModel"
         } ],
         "outputs" : [ {
-          "id" : "KN8s5b0z",
+          "id" : "LzJmcjH4",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -396,11 +389,11 @@
     }
   },
   "connections" : [ {
-    "id" : "HhFegUWF",
-    "source" : "newTemporaryModel##aXRItjEc",
-    "sourcePort" : "lT8PZHMc",
-    "target" : "newSnap##zkWvdyqF",
-    "targetPort" : "vA39hFFg"
+    "id" : "vr6EcHrg",
+    "source" : "newTemporaryModel##YVoaWx4D",
+    "sourcePort" : "W3OFcbyy",
+    "target" : "newSnap##F6yb16I1",
+    "targetPort" : "siuykvwH"
   } ],
   "component" : "Snapshot"
 }
