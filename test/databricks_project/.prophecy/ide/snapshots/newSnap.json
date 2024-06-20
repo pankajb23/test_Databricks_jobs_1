@@ -2,7 +2,7 @@
   "id" : "newSnap",
   "metainfo" : {
     "label" : "newSnap",
-    "autoLayout" : false,
+    "autoLayout" : true,
     "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
@@ -17,19 +17,16 @@
       },
       "userDefinedConfig" : {
         "vars" : { }
-      },
-      "mergeApproach" : "scd2"
+      }
     },
     "version" : 3
   },
   "processes" : {
-    "newTemporaryModel##aXRItjEc" : {
-      "id" : "newTemporaryModel##aXRItjEc",
+    "newTemporaryModel##MuCS9OXt" : {
+      "id" : "newTemporaryModel##MuCS9OXt",
       "component" : "Model",
       "metadata" : {
         "label" : "newTemporaryModel",
-        "x" : 20,
-        "y" : 20,
         "phase" : 0
       },
       "properties" : {
@@ -41,7 +38,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "lT8PZHMc",
+          "id" : "J5kCuB6P",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -152,30 +149,22 @@
         "autoUpdateOnRun" : false
       }
     },
-    "newSnap##zkWvdyqF" : {
-      "id" : "newSnap##zkWvdyqF",
-      "component" : "TargetModel",
+    "newSnap##kEe1pqjY" : {
+      "id" : "newSnap##kEe1pqjY",
+      "component" : "TargetSnapshot",
       "metadata" : {
         "label" : "newSnap",
-        "x" : 220,
-        "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "customQueryDisabled" : true,
-        "customQuery" : false,
-        "incrementalEditorDisabled" : true,
         "query" : "SELECT * \n\nFROM newTemporaryModel\n",
-        "isModel" : false,
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
+        "customQuery" : false,
+        "customQueryDisabled" : true
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "vA39hFFg",
+          "id" : "a8SKr2m5",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -283,7 +272,7 @@
           "slug" : "newTemporaryModel"
         } ],
         "outputs" : [ {
-          "id" : "KN8s5b0z",
+          "id" : "FgsGJtzc",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -396,11 +385,11 @@
     }
   },
   "connections" : [ {
-    "id" : "HhFegUWF",
-    "source" : "newTemporaryModel##aXRItjEc",
-    "sourcePort" : "lT8PZHMc",
-    "target" : "newSnap##zkWvdyqF",
-    "targetPort" : "vA39hFFg"
+    "id" : "GxGWI6H7",
+    "source" : "newTemporaryModel##MuCS9OXt",
+    "sourcePort" : "J5kCuB6P",
+    "target" : "newSnap##kEe1pqjY",
+    "targetPort" : "a8SKr2m5"
   } ],
   "component" : "Snapshot"
 }

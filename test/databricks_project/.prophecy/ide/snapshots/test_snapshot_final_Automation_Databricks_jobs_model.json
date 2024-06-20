@@ -18,14 +18,13 @@
       },
       "userDefinedConfig" : {
         "vars" : { }
-      },
-      "mergeApproach" : "scd2"
+      }
     },
     "version" : 3
   },
   "processes" : {
-    "test_Automation_Databricks_jobs_model##noZ5rfng" : {
-      "id" : "test_Automation_Databricks_jobs_model##noZ5rfng",
+    "test_Automation_Databricks_jobs_model##anxzQZTe" : {
+      "id" : "test_Automation_Databricks_jobs_model##anxzQZTe",
       "component" : "Model",
       "metadata" : {
         "label" : "test_Automation_Databricks_jobs_model",
@@ -40,7 +39,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "k19Ex93w",
+          "id" : "Z0i46LFk",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -151,28 +150,22 @@
         "autoUpdateOnRun" : false
       }
     },
-    "test_snapshot_final_Automation_Databricks_jobs_model##QfuX6MMf" : {
-      "id" : "test_snapshot_final_Automation_Databricks_jobs_model##QfuX6MMf",
-      "component" : "TargetModel",
+    "test_snapshot_final_Automation_Databricks_jobs_model##TINXfS6i" : {
+      "id" : "test_snapshot_final_Automation_Databricks_jobs_model##TINXfS6i",
+      "component" : "TargetSnapshot",
       "metadata" : {
         "label" : "test_snapshot_final_Automation_Databricks_jobs_model",
         "phase" : 0,
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "customQueryDisabled" : true,
-        "customQuery" : false,
-        "incrementalEditorDisabled" : true,
         "query" : "SELECT * \n\nFROM test_Automation_Databricks_jobs_model\n",
-        "isModel" : false,
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
+        "customQuery" : false,
+        "customQueryDisabled" : true
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "cpcKOISf",
+          "id" : "tLjbu4zf",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -280,7 +273,7 @@
           "slug" : "test_Automation_Databricks_jobs_model"
         } ],
         "outputs" : [ {
-          "id" : "SdfDF8Su",
+          "id" : "Du0TnitT",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -393,11 +386,11 @@
     }
   },
   "connections" : [ {
-    "id" : "jrPhXJyG",
-    "source" : "test_Automation_Databricks_jobs_model##noZ5rfng",
-    "sourcePort" : "k19Ex93w",
-    "target" : "test_snapshot_final_Automation_Databricks_jobs_model##QfuX6MMf",
-    "targetPort" : "cpcKOISf"
+    "id" : "yFkCXP1x",
+    "source" : "test_Automation_Databricks_jobs_model##anxzQZTe",
+    "sourcePort" : "Z0i46LFk",
+    "target" : "test_snapshot_final_Automation_Databricks_jobs_model##TINXfS6i",
+    "targetPort" : "tLjbu4zf"
   } ],
   "component" : "Snapshot"
 }

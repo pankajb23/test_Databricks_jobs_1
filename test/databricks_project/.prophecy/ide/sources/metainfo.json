@@ -618,14 +618,6 @@
     "name" : "test_Automation_Databricks_jobs_model",
     "type" : "Model",
     "syncedOnce" : false
-  }, {
-    "name" : "newSnap",
-    "type" : "Snapshot",
-    "syncedOnce" : false
-  }, {
-    "name" : "test_snapshot_final_Automation_Databricks_jobs_model",
-    "type" : "Snapshot",
-    "syncedOnce" : false
   } ],
   "frontEndLanguage" : "sql"
 }
