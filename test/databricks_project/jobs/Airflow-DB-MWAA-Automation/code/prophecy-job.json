@@ -77,14 +77,14 @@
       },
       "settings" : { },
       "properties" : {
-        "entityId" : "108/.prophecy/metadata/sqlmodels/model02",
+        "entityId" : "119/.prophecy/metadata/sqlmodels/model3",
         "cacheSelectedOnly" : null,
         "gitSubPath" : null,
         "runModelWithParents" : true,
         "defer" : null,
         "noDefer" : null,
         "runSeed" : true,
-        "gitEntity" : "tag",
+        "gitEntity" : "branch",
         "noPartialParse" : null,
         "model" : null,
         "warnErrorOptions" : null,
@@ -94,22 +94,22 @@
         "currentProjectSnapshots" : [ {
           "label" : "model3",
           "value" : "model3",
-          "id" : "119/.prophecy/metadata/sqlmodels/model3",
+          "id" : "108/.prophecy/metadata/sqlmodels/model3",
           "name" : "model3"
         }, {
           "label" : "model02",
           "value" : "model02",
-          "id" : "119/.prophecy/metadata/sqlmodels/model02",
+          "id" : "108/.prophecy/metadata/sqlmodels/model02",
           "name" : "model02"
         }, {
           "label" : "newTemporaryModel",
           "value" : "newTemporaryModel",
-          "id" : "119/.prophecy/metadata/sqlmodels/newTemporaryModel",
+          "id" : "108/.prophecy/metadata/sqlmodels/newTemporaryModel",
           "name" : "newTemporaryModel"
         }, {
           "label" : "test_Automation_Databricks_jobs_model",
           "value" : "test_Automation_Databricks_jobs_model",
-          "id" : "119/.prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model",
+          "id" : "108/.prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model",
           "name" : "test_Automation_Databricks_jobs_model"
         } ],
         "gitSshUrl" : null,
@@ -121,7 +121,7 @@
         "customVersion" : true,
         "noPrint" : null,
         "quiet" : null,
-        "projectId" : "119",
+        "projectId" : "108",
         "runMode" : "model",
         "runOnlyModel" : false,
         "favorState" : null,
@@ -132,9 +132,9 @@
         "select" : null,
         "recordTimingInfo" : null,
         "fullRefresh" : null,
-        "entityName" : "model02",
+        "entityName" : "model3",
         "noCacheSelectedOnly" : null,
-        "gitEntityValueTag" : "Databricks_AutomationJobs_Project/1.0",
+        "gitEntityValueTag" : null,
         "noFavorState" : null,
         "snapshot" : null,
         "isProphecyManaged" : false,
@@ -143,15 +143,16 @@
         "noWriteJson" : null,
         "printerWidth" : null,
         "sqlFabricId" : "33",
-        "gitEntityValue" : "Databricks_AutomationJobs_Project/1.0",
+        "gitEntityValue" : null,
         "logFormat" : null,
         "runModelWithChildren" : false,
         "dbtProfileSecret" : null,
+        "gitEntityValueCommit" : null,
         "target" : null,
         "exclude" : null,
         "runDeps" : null,
         "loadingSnapshots" : false,
-        "gitEntityValueBranch" : "main2",
+        "gitEntityValueBranch" : null,
         "noAnonymousUsageStats" : null,
         "selector" : null,
         "targetPath" : null,
@@ -160,22 +161,22 @@
         "currentProjectModels" : [ {
           "label" : "model3",
           "value" : "model3",
-          "id" : "119/.prophecy/metadata/sqlmodels/model3",
+          "id" : "108/.prophecy/metadata/sqlmodels/model3",
           "name" : "model3"
         }, {
           "label" : "model02",
           "value" : "model02",
-          "id" : "119/.prophecy/metadata/sqlmodels/model02",
+          "id" : "108/.prophecy/metadata/sqlmodels/model02",
           "name" : "model02"
         }, {
           "label" : "newTemporaryModel",
           "value" : "newTemporaryModel",
-          "id" : "119/.prophecy/metadata/sqlmodels/newTemporaryModel",
+          "id" : "108/.prophecy/metadata/sqlmodels/newTemporaryModel",
           "name" : "newTemporaryModel"
         }, {
           "label" : "test_Automation_Databricks_jobs_model",
           "value" : "test_Automation_Databricks_jobs_model",
-          "id" : "119/.prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model",
+          "id" : "108/.prophecy/metadata/sqlmodels/test_Automation_Databricks_jobs_model",
           "name" : "test_Automation_Databricks_jobs_model"
         } ],
         "profilesDir" : null,

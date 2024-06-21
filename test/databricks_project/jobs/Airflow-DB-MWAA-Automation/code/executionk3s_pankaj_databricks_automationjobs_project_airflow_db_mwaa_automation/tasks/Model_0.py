@@ -12,13 +12,13 @@ def Model_0():
           ["{} && cd $tmpDir/{}".format(
              (
                "set -euxo pipefail && tmpDir=`mktemp -d` && git clone "
-               + "--depth 1 {} --branch {} $tmpDir".format(
+               + "{} --branch {} --single-branch $tmpDir".format(
                  "https://github.com/pankajb23/test_Databricks_jobs_1",
-                 "Databricks_AutomationJobs_Project/1.0"
+                 None
                )
              ),
              "test/databricks_project"
-           ),            "dbt seed --profile run_profile -m +model02",  "dbt run --profile run_profile -m +model02",            "dbt test --profile run_profile -m +model02"]
+           ),            "dbt seed --profile run_profile -m +model3",  "dbt run --profile run_profile -m +model3",            "dbt test --profile run_profile -m +model3"]
         ),
         env = {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "/home/airflow/gcs/data"},
         append_env = True,
