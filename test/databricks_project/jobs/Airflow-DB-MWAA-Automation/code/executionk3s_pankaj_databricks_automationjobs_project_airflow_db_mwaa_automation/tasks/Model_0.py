@@ -18,7 +18,7 @@ def Model_0():
                )
              ),
              "test/databricks_project"
-           ),            "dbt seed --profile run_profile -m +model3",  "dbt run --profile run_profile -m +model3",            "dbt test --profile run_profile -m +model3"]
+           ),            "dbt seed --profile run_profile",  "dbt run --profile run_profile",  "dbt test --profile run_profile"]
         ),
         env = {"DBT_DATABRICKS_INVOCATION_ENV" : "prophecy", "DBT_PROFILES_DIR" : "/home/airflow/gcs/data"},
         append_env = True,
