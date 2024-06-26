@@ -614,10 +614,6 @@
     "name" : "newTemporaryModel",
     "type" : "Model",
     "syncedOnce" : false
-  }, {
-    "name" : "test_Automation_Databricks_jobs_model",
-    "type" : "Model",
-    "syncedOnce" : false
   } ],
   "frontEndLanguage" : "sql"
 }
